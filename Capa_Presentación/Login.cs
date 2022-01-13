@@ -13,6 +13,8 @@ namespace Capa_Presentación
 
         private void button1_Click(object sender, EventArgs e)
         {
+            CRUD crud = new CRUD();
+            Login login = new Login();
             if (txtUser.Text != "")
             {
                 if (txtPass.Text != "")
@@ -22,14 +24,14 @@ namespace Capa_Presentación
                     if (validLogin == true)
                     {
                         //Show the main form and hide the Login form
-                        CRUD crud = new CRUD();
                         crud.Show();
-                        this.Hide();
+                        login.Close();
                     }
                     else
                     {
                         msgError("Wrong username or password. \n Please, try again!");
                         txtPass.Clear();
+                        txtUser.Clear();
                         txtUser.Focus();
                     }
                 }
