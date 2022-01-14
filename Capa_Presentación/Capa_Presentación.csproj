@@ -103,8 +103,11 @@
     <None Include="Resources\exclamation-mark.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Ojo.png" />
     <None Include="Resources\save.png" />
     <None Include="Resources\edit.png" />
+    <None Include="Resources\BolsaDinero.png" />
+    <None Include="Resources\bolsa-de-dinero2.png" />
     <Content Include="Resources\error-icon.png" />
     <None Include="Resources\salary1.png" />
     <None Include="Resources\salary.png" />
